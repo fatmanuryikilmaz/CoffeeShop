@@ -4,14 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FikaCoffeeShop.Core
+namespace FikaCoffeeShop.Core.DTOs
 {
-    public class ProductFeature
+    public class ProductFeatureDto
     {
         public int Id { get; set; }
-        public decimal Calorie { get; set; }
-        public string? ServingType { get; set; }
+        public int Calorie { get; set; }
+        public string ServingType { get; set; }
         public int ProductId { get; set; }
-        public Product Product { get; set; }
     }
 }

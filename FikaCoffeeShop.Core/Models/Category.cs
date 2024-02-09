@@ -4,11 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FikaCoffeeShop.Core
+namespace FikaCoffeeShop.Core.Models
 {
-    public class Category:BaseEntity
+    public class Category : BaseEntity
     {
-        public string? Name { get; set; }
+        public string Name { get; set; }
 
         public ICollection<Product> Products { get; set; }
     }

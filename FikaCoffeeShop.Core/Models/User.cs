@@ -1,4 +1,4 @@
-﻿namespace FikaCoffeeShop.Core
+﻿namespace FikaCoffeeShop.Core.Models
 {
     public class User : BaseEntity
     {
