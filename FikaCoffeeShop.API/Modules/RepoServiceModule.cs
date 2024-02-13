@@ -7,6 +7,7 @@ using FikaCoffeeShop.Repository.Repositories;
 using FikaCoffeeShop.Repository.UnitOfWorks;
 using FikaCoffeeShop.Service.Mapping;
 using FikaCoffeeShop.Service.Services;
+using FikaCoffeShop.Caching;
 using System.Reflection;
 using Module = Autofac.Module;
 
@@ -33,6 +34,8 @@ namespace FikaCoffeeShop.API.Modules
             builder.RegisterAssemblyTypes(apiAssembly, repoAssembly, serviceAssembly).Where(x=>x.Name.EndsWith("Repository")).AsImplementedInterfaces().InstancePerLifetimeScope();
 
             builder.RegisterAssemblyTypes(apiAssembly, repoAssembly, serviceAssembly).Where(x=>x.Name.EndsWith("Service")).AsImplementedInterfaces().InstancePerLifetimeScope();
+
+            builder.RegisterType<ProductServiceWithCaching>().As<IProductService>();
 
 
 

@@ -16,7 +16,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FikaCoffeeShop.Service\FikaCoffeeShop.Service.csproj" />
+    <ProjectReference Include="..\FikaCoffeShop.Caching\FikaCoffeShop.Caching.csproj" />
   </ItemGroup>
 
 </Project>
